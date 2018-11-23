@@ -1,6 +1,6 @@
 {
   "name": "vue-google-signin-button-directive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Vue directive to include Google Sign-In Button behavior in any component.",
   "main": "index.js",
   "scripts": {
