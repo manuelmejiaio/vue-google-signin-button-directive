@@ -2,7 +2,7 @@
 
 > :closed_lock_with_key: A simple [Vue](https://vuejs.org) directive to include  [Google Sign-In Button](https://developers.google.com/identity/sign-in/web/sign-in) behavior in any component.
 
-<img src="https://github.com/mejiamanuel57/vue-google-signin-button-directive/blob/master/screenshot.jpg" width="677" alt="Screenshot">
+<img src="https://github.com/mejiamanuel57/vue-google-signin-button-directive/raw/master/screenshot.jpg" width="677" alt="Screenshot">
 
 ## Install
 
