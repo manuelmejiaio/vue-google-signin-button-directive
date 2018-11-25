@@ -59,6 +59,8 @@ That's all.
 
 [Live example.](https://ramdomizer.com/Account/Login)
 
+> Looking for the [Facebook counterpart](https://github.com/mejiamanuel57/vue-facebook-signin-button-directive)?
+
 ## License
 
 MIT © [Manuel Mejia Jr.](https://manuelmejiajr.com)
