@@ -1,7 +1,7 @@
 
 import Vue from 'vue'
 
-Vue.directive('google-signin-button', {
+export default Vue.directive('google-signin-button', {
   bind: function (el, binding, vnode) {
     CheckComponentMethods()
     let clientId = binding.value
@@ -11,7 +11,7 @@ Vue.directive('google-signin-button', {
 
     googleSignInAPI.onload = InitGoogleButton
 
-    function InitGoogleButton () {
+    function InitGoogleButton() {
       gapi.load('auth2', () => {
         const auth2 = gapi.auth2.init({
           client_id: clientId,
@@ -23,14 +23,14 @@ Vue.directive('google-signin-button', {
         )
       })
     }
-    function OnSuccess (googleUser) {
+    function OnSuccess(googleUser) {
       vnode.context.OnGoogleAuthSuccess(googleUser.getAuthResponse().id_token)
       googleUser.disconnect()
     }
-    function Onfail (error) {
+    function Onfail(error) {
       vnode.context.OnGoogleAuthFail(error)
     }
-    function CheckComponentMethods () {
+    function CheckComponentMethods() {
       if (!vnode.context.OnGoogleAuthSuccess) {
         throw new Error('The method OnGoogleAuthSuccess must be defined on the component')
       }

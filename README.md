@@ -8,6 +8,8 @@
 
 ``` bash
 $ npm install --save vue-google-signin-button-directive
+
+$ yarn add vue-google-signin-button-directive
 ```
 ## Usage
 
