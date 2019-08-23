@@ -24,7 +24,7 @@ export default Vue.directive('google-signin-button', {
       })
     }
     function OnSuccess(googleUser) {
-      vnode.context.OnGoogleAuthSuccess(googleUser.getAuthResponse().id_token)
+      vnode.context.OnGoogleAuthSuccess(googleUser)
       googleUser.disconnect()
     }
     function Onfail(error) {
