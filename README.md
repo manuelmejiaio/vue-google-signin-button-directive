@@ -33,8 +33,8 @@ export default {
     clientId: 'Your_Google_Client-Id'
   }),
   methods: {
-    OnGoogleAuthSuccess (idToken) {
-      // Receive the idToken and make your magic with the backend
+    OnGoogleAuthSuccess (response) {
+      console.log(response)
     },
     OnGoogleAuthFail (error) {
       console.log(error)
